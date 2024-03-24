@@ -1,0 +1,28 @@
+.newForm {
+  padding: 15px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  width: 150%;
+  height: 150%;
+  box-sizing: border-box;
+}
+
+.form-label {
+  width: 100%;
+}
+
+.form-input-field {
+  width: calc(100% - 32px);
+}
+
+.side-by-side-fields {
+  display: flex;
+}
+
+.side-by-side-field {
+  flex: 1;
+}
+
+.error-label {
+  color: red;
+  font-size: small;
+}

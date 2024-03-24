@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Content from "./Content";
+import NavBar from "./NavBar";
+import WebPageTitle from "./WebPageTitle";
 
 function App() {
+  const [formVisibility, setFormVisibility] = useState(false);
+
+  const getFormVisibility = (visibility) => {
+    setFormVisibility(visibility);
+  };
+  const [clearInputs, setClearInputs] = useState(false);
+
+  const getClearForm = () => {
+    setClearInputs(true);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <WebPageTitle />
+      <NavBar
+        getFormVisibility={getFormVisibility}
+        getClearForm={getClearForm}
+      />
+      <Content formVisibility={formVisibility} clear={clearInputs} />
     </div>
   );
 }

@@ -1,0 +1,21 @@
+.grid-container {
+  max-width: 90%;
+  box-sizing: border-box;
+  margin: 30px auto;
+}
+.grid-item {
+  width: 400px;
+}
+
+.contact-list > div {
+  margin-bottom: 0; /* Remove bottom margin between contact items */
+  padding-bottom: 0; /* Remove bottom padding between contact items */
+}
+
+.selected-item {
+  background-color: rgb(
+    204,
+    231,
+    240
+  ); /* Set the background color for the selected item */
+}

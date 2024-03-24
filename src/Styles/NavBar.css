@@ -1,0 +1,27 @@
+.list-group {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.list-group-item {
+  float: left;
+}
+
+.list-group-item label {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+}
+
+.list-group-item label:hover {
+  background-color: #111;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
