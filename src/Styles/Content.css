@@ -1,12 +1,32 @@
 .grid-container {
-  max-width: 90%;
+  max-width: 100%;
   box-sizing: border-box;
-  margin: 30px auto;
+  margin: 20px auto;
+  padding: 20px;
+  vertical-align: top;
 }
 .grid-item {
-  width: 400px;
+  width: 100%;
 }
-
+.grid-item-left {
+  width: 35%;
+  display: inline-block;
+  vertical-align: top;
+}
+.grid-item-right {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+}
+.subHeading {
+  padding:0 0 15px 0;
+  margin: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.contact-list {
+  padding-right:50px;
+}
 .contact-list > div {
   margin-bottom: 0; /* Remove bottom margin between contact items */
   padding-bottom: 0; /* Remove bottom padding between contact items */

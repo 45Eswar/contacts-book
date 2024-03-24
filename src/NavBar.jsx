@@ -20,6 +20,9 @@ function NavBar(props) {
         <li className="list-group-item" onClick={handleAdd}>
           <label> +Add </label>
         </li>
+        <li className="list-group-item-img">
+          <img src="/Images/blog-icon.png" alt="it is blog icon" />
+          </li>
       </ul>
     </div>
   );

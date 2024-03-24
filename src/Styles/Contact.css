@@ -10,10 +10,4 @@
 .contact-item {
   padding: 10px;
   border: 1px solid rgb(188, 188, 188);
-  margin-bottom: 0; /* Remove bottom margin between contact items */
-  padding-bottom: 0; /* Remove bottom padding between contact items */
-}
-
-.contact-group-item {
-  margin-top: 5px;
 }

@@ -13,7 +13,7 @@ function ContactsList(props) {
 
   return (
     <div className="contact-list">
-      Contacts:
+      <h3 class="subHeading">Contacts</h3>
       {props.contacts.map((contact, index) => (
         <div
           key={index}

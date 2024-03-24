@@ -96,6 +96,7 @@ function NewForm(props) {
         id="contact-form"
         className="contactForm"
       >
+        <div class="formColL">
         <label className="form-label">
           Name
           <br />
@@ -108,7 +109,7 @@ function NewForm(props) {
           />
           <label className="error-label"> {error.cname}</label>
         </label>
-        <br />
+
         <label className="form-label">
           Email
           <br />
@@ -121,7 +122,6 @@ function NewForm(props) {
           />
           <label className="error-label"> {error.email}</label>
         </label>
-        <br />
         <div className="side-by-side-fields">
           <div className="side-by-side-field">
             <label className="form-label">
@@ -164,7 +164,7 @@ function NewForm(props) {
           />
           <label className="error-label">{error.website}</label>
         </label>
-        <br />
+
         <label className="form-label">
           Address
           <br />
@@ -176,10 +176,12 @@ function NewForm(props) {
           />
           <label className="error-label">{error.address}</label>
         </label>
-        <br />
-        <button type="Submit">
+        </div>
+        <div class="formColR">
+          <button type="Submit" class="submitBtn">
           {props.selectedItemIndex < 0 ? "Create" : "Update"}
         </button>
+        </div>
       </form>
     </div>
   );

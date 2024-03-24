@@ -44,7 +44,7 @@ function Content(props) {
   return (
     <div>
       <div className="grid-container">
-        <div className="grid-item">
+        <div className="grid-item-left">
           <ContactsList
             contacts={contactsList}
             getSelectedContactItem={getSelectedContactItem}
@@ -53,7 +53,7 @@ function Content(props) {
           />
         </div>
         <div
-          className="grid-item"
+          className="grid-item-right"
           style={{ visibility: props.formVisibility ? "visible" : "hidden" }}
         >
           <NewForm
