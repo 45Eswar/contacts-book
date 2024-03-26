@@ -1,0 +1,154 @@
+/* New form CSS */
+.formColL {
+  display: inline-block;
+  width: 80%;
+  padding-bottom: 45px;
+}
+.formColR {
+  display: inline-block;
+  width: 20%;
+  vertical-align: bottom;
+}
+.newForm {
+  padding: 15px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-label {
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 10px;
+  display: block;
+}
+
+.form-input-field {
+  width: calc(100% - 32px);
+  border: 1px solid #666666;
+  padding: 12px 10px;
+  resize: none;
+  margin-top: 5px;
+}
+.submitBtn {
+  border: 0;
+  background: green;
+  color: #fff;
+  padding: 15px;
+  width: 100%;
+}
+
+.side-by-side-fields {
+  display: flex;
+}
+
+.side-by-side-field {
+  flex: 1;
+}
+
+.error-label {
+  color: red;
+  font-size: small;
+}
+
+/* contact items */
+
+.contact-group {
+  display: flex;
+  flex-direction: column;
+}
+.contact-group-item-username {
+  font-size: 35px;
+  color: rgb(70, 70, 70);
+}
+
+.contact-item {
+  padding: 10px;
+  border: 1px solid rgb(188, 188, 188);
+}
+
+/* Navigation Bar */
+
+.navbar-list-group {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar-list-group-item {
+  float: left;
+}
+
+.navbar-list-group-item label {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 6px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+li.navbar-list-group-item-img {
+  float: right;
+  padding-top: 4px;
+  padding-right: 10px;
+}
+
+.navbar-list-group-item label:hover {
+  background-color: #111;
+}
+
+.navbar-list-group-item-img {
+  float: right;
+}
+
+/* content */
+
+.content-grid-container {
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 20px;
+  vertical-align: top;
+}
+.content-grid-item {
+  width: 100%;
+}
+.content-grid-item-left {
+  width: 35%;
+  display: inline-block;
+  vertical-align: top;
+}
+.content-grid-item-right {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* content List */
+
+.contentList-subHeading {
+  padding: 0 0 15px 0;
+  margin: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.contentList-contact-list {
+  padding-right: 50px;
+}
+.contentList-contact-list > div {
+  margin-bottom: 0; /* Remove bottom margin between contact items */
+  padding-bottom: 0; /* Remove bottom padding between contact items */
+}
+
+.contentList-selected-item {
+  background-color: rgb(
+    204,
+    231,
+    240
+  ); /* Set the background color for the selected item */
+}

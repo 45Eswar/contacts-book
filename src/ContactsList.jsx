@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Contact from "./Contact";
-import "./Styles/Content.css";
+import "./Styles/CustomStyle.css";
 
 function ContactsList(props) {
   const [selectedItemIndex, setSelectedItemIndex] = useState(-1);
@@ -12,12 +12,14 @@ function ContactsList(props) {
   };
 
   return (
-    <div className="contact-list">
-      <h3 class="subHeading">Contacts</h3>
+    <div className="contentList-contact-list">
+      <h3 class="content-subHeading">Contacts</h3>
       {props.contacts.map((contact, index) => (
         <div
           key={index}
-          className={index === selectedItemIndex ? "selected-item" : ""}
+          className={
+            index === selectedItemIndex ? "contentList-selected-item" : ""
+          }
           onClick={() => handleItemClick(index, contact)}
         >
           <Contact contact={contact} />

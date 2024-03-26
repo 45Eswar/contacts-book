@@ -1,5 +1,5 @@
 import React from "react";
-import "./Styles/NavBar.css";
+import "./Styles/CustomStyle.css";
 
 function NavBar(props) {
   const handleHome = () => {
@@ -13,16 +13,16 @@ function NavBar(props) {
 
   return (
     <div>
-      <ul className="list-group">
-        <li className="list-group-item" onClick={handleHome}>
+      <ul className="navbar-list-group">
+        <li className="navbar-list-group-item" onClick={handleHome}>
           <label> Home </label>
         </li>
-        <li className="list-group-item" onClick={handleAdd}>
+        <li className="navbar-list-group-item" onClick={handleAdd}>
           <label> +Add </label>
         </li>
-        <li className="list-group-item-img">
+        <li className="navbar-list-group-item-img">
           <img src="/Images/blog-icon.png" alt="it is blog icon" />
-          </li>
+        </li>
       </ul>
     </div>
   );

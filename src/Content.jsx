@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ContactsList from "./ContactsList";
 import NewForm from "./NewForm";
-import "./Styles/Content.css";
+import "./Styles/CustomStyle.css";
 
 function Content(props) {
   const [contactsList, setContactsList] = useState([]);
@@ -43,8 +43,8 @@ function Content(props) {
 
   return (
     <div>
-      <div className="grid-container">
-        <div className="grid-item-left">
+      <div className="content-grid-container">
+        <div className="content-grid-item-left">
           <ContactsList
             contacts={contactsList}
             getSelectedContactItem={getSelectedContactItem}
@@ -53,7 +53,7 @@ function Content(props) {
           />
         </div>
         <div
-          className="grid-item-right"
+          className="content-grid-item-right"
           style={{ visibility: props.formVisibility ? "visible" : "hidden" }}
         >
           <NewForm

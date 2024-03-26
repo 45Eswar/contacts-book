@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./Styles/NewForm.css";
+import "./Styles/CustomStyle.css";
+
 function NewForm(props) {
   const [contact, setContact] = useState({
     cname: "",
@@ -97,90 +98,90 @@ function NewForm(props) {
         className="contactForm"
       >
         <div class="formColL">
-        <label className="form-label">
-          Name
-          <br />
-          <input
-            className="form-input-field"
-            type="text"
-            name="cname"
-            value={contact.cname}
-            onChange={handleChange}
-          />
-          <label className="error-label"> {error.cname}</label>
-        </label>
+          <label className="form-label">
+            Name
+            <br />
+            <input
+              className="form-input-field"
+              type="text"
+              name="cname"
+              value={contact.cname}
+              onChange={handleChange}
+            />
+            <label className="error-label"> {error.cname}</label>
+          </label>
 
-        <label className="form-label">
-          Email
-          <br />
-          <input
-            className="form-input-field"
-            type="text"
-            name="email"
-            value={contact.email}
-            onChange={handleChange}
-          />
-          <label className="error-label"> {error.email}</label>
-        </label>
-        <div className="side-by-side-fields">
-          <div className="side-by-side-field">
-            <label className="form-label">
-              Mobile
-              <br />
-              <input
-                className="form-input-field"
-                type="text"
-                name="mobile"
-                value={contact.mobile}
-                onChange={handleChange}
-              />
-              <label className="error-label">{error.mobile}</label>
-            </label>
+          <label className="form-label">
+            Email
+            <br />
+            <input
+              className="form-input-field"
+              type="text"
+              name="email"
+              value={contact.email}
+              onChange={handleChange}
+            />
+            <label className="error-label"> {error.email}</label>
+          </label>
+          <div className="side-by-side-fields">
+            <div className="side-by-side-field">
+              <label className="form-label">
+                Mobile
+                <br />
+                <input
+                  className="form-input-field"
+                  type="text"
+                  name="mobile"
+                  value={contact.mobile}
+                  onChange={handleChange}
+                />
+                <label className="error-label">{error.mobile}</label>
+              </label>
+            </div>
+            <div className="side-by-side-field">
+              <label className="form-label">
+                Landline
+                <br />
+                <input
+                  className="form-input-field"
+                  type="text"
+                  name="landline"
+                  value={contact.landline}
+                  onChange={handleChange}
+                />
+                <label className="error-label">{error.landline}</label>
+              </label>
+            </div>
           </div>
-          <div className="side-by-side-field">
-            <label className="form-label">
-              Landline
-              <br />
-              <input
-                className="form-input-field"
-                type="text"
-                name="landline"
-                value={contact.landline}
-                onChange={handleChange}
-              />
-              <label className="error-label">{error.landline}</label>
-            </label>
-          </div>
-        </div>
-        <label className="form-label">
-          Website
-          <br />
-          <input
-            className="form-input-field"
-            type="text"
-            name="website"
-            value={contact.website}
-            onChange={handleChange}
-          />
-          <label className="error-label">{error.website}</label>
-        </label>
+          <label className="form-label">
+            Website
+            <br />
+            <input
+              className="form-input-field"
+              type="text"
+              name="website"
+              value={contact.website}
+              onChange={handleChange}
+            />
+            <label className="error-label">{error.website}</label>
+          </label>
 
-        <label className="form-label">
-          Address
-          <br />
-          <textarea
-            className="form-input-field"
-            name="address"
-            value={contact.address}
-            onChange={handleChange}
-          />
-          <label className="error-label">{error.address}</label>
-        </label>
+          <label className="form-label">
+            Address
+            <br />
+            <textarea
+              className="form-input-field"
+              name="address"
+              value={contact.address}
+              onChange={handleChange}
+            />
+            <label className="error-label">{error.address}</label>
+          </label>
         </div>
         <div class="formColR">
           <button type="Submit" class="submitBtn">
-          {props.selectedItemIndex < 0 ? "Create" : "Update"}
-        </button>
+            {props.selectedItemIndex < 0 ? "Create" : "Update"}
+          </button>
         </div>
       </form>
     </div>
